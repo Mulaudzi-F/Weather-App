@@ -67,21 +67,58 @@ button:hover {
   background: #444;
   color: white;
 }
-
-/* Weather details */
+/* Weather Details Styling */
 .weather-details {
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background 0.3s ease-in-out;
 }
 
+.app-container.dark .weather-details {
+  background: rgba(40, 40, 40, 0.9);
+  color: white;
+}
+
+/* Title */
 .weather-details h3 {
-  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #007bff;
 }
 
+.app-container.dark .weather-details h3 {
+  color: #1e90ff;
+}
+
+/* Weather Data */
 .weather-details p {
   margin: 5px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-/* Map styling */
+/* Weather description emphasis */
+.weather-details p:nth-child(3) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Temperature highlight */
+.weather-details p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.app-container.dark .weather-details p:nth-child(2) {
+  color: #ffa500;
+}
+
 .map-container {
   flex: 1;
   height: 100vh;
