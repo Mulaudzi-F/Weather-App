@@ -1,12 +1,52 @@
-# React + Vite
+# Weather Map App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React-based weather application that allows users to interact with a map, select a location, and fetch real-time weather data using the OpenWeatherMap API. It also includes features like dark mode and a search bar for better usability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Interactive Map**: Uses React Leaflet to allow users to click on any location and get weather details.
+- **Weather Data**: Fetches weather data from OpenWeatherMap API based on latitude and longitude.
+- **Search Functionality**: Allows users to search for a city and center the map on it.
+- **Dark Mode**: Users can toggle between light and dark themes.
+- **Responsive UI**: Optimized for desktop, tablet, and mobile views with stunning UI elements.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React** (Frontend framework)
+- **React Leaflet** (Map integration)
+- **Axios** (API requests)
+- **OpenWeatherMap API** (Weather data)
+- **CSS** (Styling)
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   cd weather-map-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+   ```sh
+   REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+5. Open `http://localhost:3000` in your browser to view the application.
+
+## Assumptions
+
+- The OpenWeatherMap API key is available and correctly configured.
+- The application requires an internet connection to fetch weather data.
+- Location search functionality relies on Nominatim OpenStreetMap API.
+
+## Repository Link
+
+[GitHub Repository](https://github.com/Mulaudzi-F/Weather-App/tree/master)
