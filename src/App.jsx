@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 
 import {
@@ -13,8 +12,8 @@ import {
 import axios from "axios";
 import "leaflet/dist/leaflet.css";
 
-const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
-
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
+console.log(API_KEY);
 const App = () => {
   const [weather, setWeather] = useState(null);
   const [position, setPosition] = useState([51.505, -0.09]); // Default to London
