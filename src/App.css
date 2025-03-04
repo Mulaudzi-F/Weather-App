@@ -1,0 +1,88 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Light & Dark mode styling */
+.app-container {
+  display: flex;
+  height: 100vh;
+  transition: background 0.3s ease-in-out;
+}
+
+.app-container.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.app-container.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease-in-out;
+}
+
+.app-container.dark .sidebar {
+  background: rgba(40, 40, 40, 0.9);
+}
+
+/* Input and button styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.app-container.light button {
+  background: #007bff;
+  color: white;
+}
+
+.app-container.dark button {
+  background: #444;
+  color: white;
+}
+
+/* Weather details */
+.weather-details {
+  margin-top: 10px;
+}
+
+.weather-details h3 {
+  margin: 0;
+}
+
+.weather-details p {
+  margin: 5px 0;
+}
+
+/* Map styling */
+.map-container {
+  flex: 1;
+  height: 100vh;
+}
