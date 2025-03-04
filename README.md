@@ -37,7 +37,7 @@ This is a React-based weather application that allows users to interact with a m
    ```
 4. Start the development server:
    ```sh
-   npm start
+   npm run dev
    ```
 5. Open `http://localhost:3000` in your browser to view the application.
 
@@ -50,3 +50,7 @@ This is a React-based weather application that allows users to interact with a m
 ## Repository Link
 
 [GitHub Repository](https://github.com/Mulaudzi-F/Weather-App/tree/master)
+
+## Live site Link
+
+[Live link](https://67c6e46ffc27321ee8dc9953--frabjous-tartufo-93305b.netlify.app/)
