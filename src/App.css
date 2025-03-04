@@ -161,6 +161,7 @@ button:hover {
   button {
     font-size: 12px;
     padding: 6px;
+    width: 70%;
   }
 
   .weather-details h3 {
